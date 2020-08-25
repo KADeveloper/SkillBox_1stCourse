@@ -9,7 +9,7 @@
 import UIKit
 
 class OnlineShopViewController: UIViewController {
-    private let content = Closes()
+    private let content: [Clothe] = [Clothe(price: 2900.00, name: "Футболка VICTORY", image: UIImage.init(named: "man1")!, discount: 10), Clothe(price: 10900.0, name: "Костюм спортивный LUX", image: UIImage.init(named: "woman2")!, discount: 5), Clothe(price: 3900.0, name: "Худи RUS", image: UIImage.init(named: "woman3")!, discount: 10), Clothe(price: 2900.0, name: "Боди COLOR BS", image: UIImage.init(named: "woman4")!, discount: 15), Clothe(price: 4500.0, name: "Зонт BS", image: UIImage.init(named: "man5")!, discount: 15), Clothe(price: 1100.0, name: "Трусы-стринги GOTHIC WORLD BS", image: UIImage.init(named: "woman6")!, discount: 5)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,28 +20,28 @@ class OnlineShopViewController: UIViewController {
 
 extension OnlineShopViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (UIScreen.main.bounds.width / 2) - 10, height: UIScreen.main.bounds.height / 3)
+        return CGSize(width: UIScreen.main.bounds.width / 2 - 15, height: UIScreen.main.bounds.height / 3)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return content.names.count
+        return content.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showOnlineShopCell", for: indexPath) as! OnlineShopCollectionViewCell
-        cell.wearImage.image = content.images[indexPath.row]
-        cell.oldPriceLabel.text = String(content.prices[indexPath.row]) + " руб"
-        cell.discountLabel.text = "-\(String(content.discounts[indexPath.row]))%"
-        cell.newPriceLabel.text = String((content.prices[indexPath.row] * (100 - content.discounts[indexPath.row]) / 100)) + " руб"
-        cell.wearDescriptionLabel.text = content.names[indexPath.row]
+        cell.wearImage.image = content[indexPath.row].image
+        cell.oldPriceLabel.text = String(content[indexPath.row].price) + " руб"
+        cell.discountLabel.text = "-\(String(content[indexPath.row].discount))%"
+        cell.newPriceLabel.text = String((Int(content[indexPath.row].price) * (100 - content[indexPath.row].discount) / 100)) + " руб"
+        cell.wearDescriptionLabel.text = content[indexPath.row].name
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 5
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
     }
 }

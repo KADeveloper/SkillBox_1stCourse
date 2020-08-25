@@ -17,7 +17,7 @@
 		5CE7098F24D9CA42008C9594 /* OnlineShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7098E24D9CA42008C9594 /* OnlineShopViewController.swift */; };
 		5CE7099124D9CA95008C9594 /* BurgerPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7099024D9CA95008C9594 /* BurgerPlaceViewController.swift */; };
 		5CE7099324D9CAA6008C9594 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7099224D9CAA6008C9594 /* SettingsViewController.swift */; };
-		5CE7099924D9CF34008C9594 /* Closes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7099824D9CF34008C9594 /* Closes.swift */; };
+		5CE7099924D9CF34008C9594 /* ClotheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7099824D9CF34008C9594 /* ClotheModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		5CE7098E24D9CA42008C9594 /* OnlineShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopViewController.swift; sourceTree = "<group>"; };
 		5CE7099024D9CA95008C9594 /* BurgerPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerPlaceViewController.swift; sourceTree = "<group>"; };
 		5CE7099224D9CAA6008C9594 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		5CE7099824D9CF34008C9594 /* Closes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closes.swift; sourceTree = "<group>"; };
+		5CE7099824D9CF34008C9594 /* ClotheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotheModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5CE7098E24D9CA42008C9594 /* OnlineShopViewController.swift */,
-				5CE7099824D9CF34008C9594 /* Closes.swift */,
+				5CE7099824D9CF34008C9594 /* ClotheModel.swift */,
 				5CE2AD3D24D9DBE400F3FF71 /* OnlineShopCollectionViewCell.swift */,
 			);
 			path = OnlineShop;
@@ -182,7 +182,7 @@
 				5C7F421C24DB3C9A0053FEEC /* SettingsTableViewCell.swift in Sources */,
 				5CE7097D24D9C96E008C9594 /* SceneDelegate.swift in Sources */,
 				5CE7098F24D9CA42008C9594 /* OnlineShopViewController.swift in Sources */,
-				5CE7099924D9CF34008C9594 /* Closes.swift in Sources */,
+				5CE7099924D9CF34008C9594 /* ClotheModel.swift in Sources */,
 				5CE2AD3E24D9DBE400F3FF71 /* OnlineShopCollectionViewCell.swift in Sources */,
 				5CE7099324D9CAA6008C9594 /* SettingsViewController.swift in Sources */,
 			);

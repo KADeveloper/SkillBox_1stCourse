@@ -87,7 +87,7 @@ class BurgerPlaceViewController: UIViewController {
         contentDescription.frame = CGRect(x: logoImage.frame.minX, y: contentTitle.frame.maxY + 5, width: logoImage.frame.width, height: 40)
         discountImage.frame = CGRect (x: logoImage.frame.minX, y: contentDescription.frame.maxY + 10, width: 30, height: 30)
         discountLabel.frame = CGRect (x: discountImage.frame.maxX, y: contentDescription.frame.maxY + 10, width: 160, height: discountImage.frame.height)
-        rateLabel.frame = CGRect (x: logoImage.frame.maxX - 100, y: contentDescription.frame.maxY + 10, width: 60, height: 30)
+        rateLabel.frame = CGRect (x: logoImage.frame.maxX - 60, y: contentDescription.frame.maxY + 10, width: 60, height: 30)
         rateImage.frame = CGRect (x: rateLabel.frame.minX - 30, y: contentDescription.frame.maxY + 10, width: 30, height: 30)
         contentView.frame = CGRect (x: logoImage.frame.minX + 10, y: rateImage.frame.maxY + 20, width: view.frame.width - 40, height: view.frame.width)
         scrollView.addSubview(contentView)
